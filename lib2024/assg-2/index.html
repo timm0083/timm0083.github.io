@@ -8,14 +8,6 @@
 	<style>
 	div.a {
 	text-indent: 50px; }
-	div.underline {
-	text-decoration-line: underline; 
-	text-decoration-style: dotted;
-	}
-	div.underline2 {
-	text-decoration-line: underline;
-	text-decoration-style: dotted;
-	}
 	span.triangle {
 	font-size: 12px;
 	}
@@ -23,12 +15,16 @@
 		border: 1px solid black;
 	text-align:center;
 	}
+	#caption {
+		padding-bottom: 20px;
+	}
 	</style>
 </head>
 <body>
 <h1>Assignment 2</h1>
+<section id="table-section" class="main-section">
 <h2>Employee List</h2>
-<table border="1" width=35%>
+<table class="border" width=35%>
     <tr>
         <th width=1%>Id</th>
         <th width=9%>Name</th>
@@ -63,20 +59,21 @@
     	<td colspan="98">All of the above are Divisions Heads</td>
     </tr>
 </table>
+</section>
 <section id="images" class="main-section">
     <h3>Animals</h3>
         <article>
             <figure>
-            <img src="img/elephant.jpg" alt="Image 1"width="300" height="200">
-            <figcaption>This is an Elephant.</figcaption>
-			<img src="img/lion.jpg" alt="Image 2"width="300" height="200">
-            <figcaption>This is a lion.</figcaption>
-			<img src="img/snake.jpg" alt="Image 3"width="300" height="200">
-            <figcaption>This is a snake.</figcaption>
-			<img src="img/whale.jpg" alt="Image 4"width="300" height="200">
-            <figcaption>This is a Whale.</figcaption>
-			<img src="img/hawk.jpg" alt="Image 5"width="300" height="200">
-            <figcaption>This is a Hawk.</figcaption>
+            <img src="img/elephant.jpg" alt="Image 1" width="300" height="200">
+            <figcaption id="caption">This is an Elephant.</figcaption>
+			<img src="img/lion.jpg" alt="Image 2" width="300" height="200">
+            <figcaption id="caption">This is a lion.</figcaption>
+			<img src="img/snake.jpg" alt="Image 3" width="300" height="200">
+            <figcaption id="caption">This is a snake.</figcaption>
+			<img src="img/whale.jpg" alt="Image 4" width="300" height="200">
+            <figcaption id="caption">This is a Whale.</figcaption>
+			<img src="img/hawk.jpg" alt="Image 5" width="300" height="200">
+            <figcaption id="caption">This is a Hawk.</figcaption>
         </figure>
     </article>
 </section>
@@ -88,11 +85,16 @@
 <h3>Special Tags : </h3>
 <p>Coffee <br> <div class="a"> &#45; black hot drink</div></p>
 <p>Milk <br> <div class="a"> &#45; white cold drink</div></p>
-<p><div class="underline">HTML</div></p>
-<p><div class="underline2">CSS</div></p>
+<section>
+	<article id="st-abbr" class="special-tag">
+<p><abbr title="HTML">HTML</abbr></p>
+<p><abbr title="CSS">CSS</abbr></p>
+</article>
+</section>
 <p><span class="triangle">&#9660;</span> What is a mobile Phone?<br>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
 <h3>Hidden comment:</h3>
-<footer>
+<footer id="footer">
 	<!--Hi Winnerjit-->
+</footer>
 </body>
 </html>
