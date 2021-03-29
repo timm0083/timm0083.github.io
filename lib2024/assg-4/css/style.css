@@ -1,0 +1,98 @@
+@charset "utf-8";
+header { 
+	background-color: #7cc576;
+	 }
+body {
+	margin: 0px;
+	background-image: url("../img/palm-leaf.png");
+	}
+.navigation {
+    width:100%; 
+    height:100%; 
+    position:relative; 
+    text-align:center;;
+}
+.logo {
+	float: left;
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+}
+h1 {
+	font-size: auto;
+	font-weight: normal;
+	font-family: serif;
+	display: inline-block;
+}
+button {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
+	background-color: #6dcff6;
+	border: 0px;
+	font-size: 20px;
+	border-radius: 5px;
+	margin: 20px;
+}
+.main-content {
+	width: 70%;
+	float: left;
+	padding: 10px;
+	display: block;
+	box-sizing: border-box;
+}
+.sidebar {
+	width: 30%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+.second-half {
+	display: flex;
+	width: 100%;
+	align-content: center;
+}
+h4 {
+	font-size: 20px;
+	font-weight: normal;
+	font-family: serif;
+	display: flex;
+	float: left;
+	padding: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  top: 50px;
+  text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+footer {
+	background-color: #7cc576;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	left: 0;
+
+}
+.icons {
+	float: right;
+	position: relative;
+	padding-bottom: 20px;
+}
+@media only screen and (max-width: 960px){
+
+}
