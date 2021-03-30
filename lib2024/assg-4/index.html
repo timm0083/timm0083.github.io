@@ -4,20 +4,29 @@
 	<meta charset="UTF-8">
 	<title>Assignment 4</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 	<body>
-		<section id="form" class="main-section">
-			<header>
+			<header class="clearfix">
 				<div class="title">
-				<img class="logo" src="img/logo.png" alt="logo">
+				<img class="logo clearfix" src="img/logo.png" alt="logo">
 				<h1>Title of Page</h1>
 			</div>
 				<div class="navigation">
 				<nav>
-					<button type="button">Home</button>
-					<button type="button">About</button>
-					<button type="button">Contact</button>
-					<button type="button">Work</button>
+				<ul>
+					<li class="button"><a href="#home">Home</a></li>
+				</ul>
+				<ul>
+					<li class="button"><a href="#about">About</a></li>
+				</ul>
+				<ul>
+					<li class="button"><a href="#about">Contact</a></li>
+				</ul>
+				<ul>
+					<li class="button"><a href="#about">Work</a></li>
+				</ul>
 				</nav>
 			</div>
 			</header>
@@ -25,41 +34,43 @@
 				<article class="first-half clearfix">
 				<section class="main-content">
 					<h2>Main Content Title</h2>
+					<br>
 					<p>Chocolate biscuit icing jujubes marzipan halvah jelly-o sweet cake. Fruitcake donut marzipan bonbon pudding pastry halvah. Powder wafer muffin chocolate bar caramels sugar plum. Sweet muffin marshmallow cotton candy. Halvah lollipop bonbon pastry sweet roll muffin chocolate. Sesame snaps sweet jelly beans liquorice. Tart powder croissant pie cheesecake caramels gummies gingerbread halvah. Jelly gummies gingerbread lollipop. Jelly liquorice soufflé pudding sugar plum icing. Lollipop oat cake cake chocolate halvah. Tart soufflé tiramisu croissant bear claw lemon drops cookie chocolate bar. Sugar plum lollipop lemon drops liquorice danish carrot cake jelly croissant.</p>
 					<br>
 					<p>Halvah dragée cupcake brownie caramels chupa chups pudding powder. Donut cheesecake croissant chocolate cake halvah candy canes marzipan. Candy jelly candy. Chocolate fruitcake dessert cake. Jelly-o cheesecake fruitcake. Cake sesame snaps sweet roll sugar plum jelly beans biscuit. Jelly biscuit cotton candy candy canes sweet roll brownie halvah chocolate cake. Sesame snaps carrot cake chocolate muffin cake tart candy canes. Cookie dragée biscuit marzipan oat cake cheesecake. Bonbon oat cake pie brownie sweet. Cake tootsie roll lollipop chupa chups candy canes chocolate bar jelly chocolate cake. Biscuit liquorice apple pie marzipan tiramisu gingerbread marzipan dessert.</p>
 				</section>
-				<aside class="sidebar">
-					<img src="img/plant-store.jpg" alt="sidebar">
+				<aside class="sidebar clearfix">
+					<img src="img/plant-store.png" alt="sidebar">
+				</aside>
+				<aside class="side-bar clearfix">
 					<h3>Title of the sidebar</h3>
+					<br>
 					<p>Cake tootsie roll lollipop chupa chups candy canes chocolate bar jelly chocolate cake. Biscuit liquorice apple pie marzipan tiramisu gingerbread marzipan dessert.</p>
 				</aside>
 			</article>
+				<h4>Secondary Content Title</h4>
 				<article class="second-half clearfix">
-					<section class="secondary-title">
-					<h4>Secondary Content Title</h4>
-				</section>
 				<section class="images">
-				<div class="row">
-					<div class="column">
-					<img src="img/half-leaves.png" alt="image 1">
-					 <figcaption id="caption">Image 1</figcaption>
-					</div>
-					<div class="column">
-					<img src="img/leaves.png" alt="image 2">
-					 <figcaption id="caption">Image 2</figcaption>
-					</div>
-					<div class="column">
-					<img src="img/plant.png" alt="image 3">
-					 <figcaption id="caption">Image 3</figcaption>
-					</div>
-				</div>
+				<figure class="row">
+					<figure class="column">
+					<img class="image-1" src="img/half-leaves.png" alt="image 1">
+					 <figcaption id="image1">Image 1</figcaption>
+					</figure>
+					<figure class="column">
+					<img class="image-2" src="img/leaves.png" alt="image 2">
+					 <figcaption id="image2">Image 2</figcaption>
+					</figure>
+					<figure class="column">
+					<img class="image-3" src="img/plant.png" alt="image 3">
+					 <figcaption id="image3">Image 3</figcaption>
+					</figure>
+				</figure>
 			</section>
 			</article>
 			</main>
 			<footer>
 				<p>&copy;CopyRight 2017, All Rights Reserved.</p>
-				<div class="icons">
+				<div class="icons clearfix">
 				<a href=“https://www.facebook.com” target="_blank">
 					<img src="img/facebook.png" alt="facebook">
 				</a>
@@ -71,5 +82,4 @@
 				</a>
 			</div>
 		</footer>
-		</section>
 	</body>
