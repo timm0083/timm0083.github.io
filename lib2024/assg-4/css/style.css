@@ -43,6 +43,7 @@ table {
 }
 header { 
 	background-color: #7cc576;
+	width: 100%;
 	 }
 .clearfix::after {
 	content: "";
@@ -164,13 +165,20 @@ h4 {
 footer {
 	background-color: #7cc576;
 	width: 100%;
-	padding: 50px;
+	padding: 15px;
+}
+.copyright {
+	width: 60%; 
+	float: left; 
+	margin: 0px; 
 }
 .icons {
-	float: right;
-	padding: 0px;
-	margin: 0px;
-	display: inline-block;
+	float: right; 
+	width: 30%; 
+	display: inline-block; 
+} 
+.icon1, .icon2, .icon3 {
+	width: 35px;
 }
 @media only screen and (max-width: 960px){
 }
