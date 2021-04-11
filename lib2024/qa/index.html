@@ -3,12 +3,50 @@
 <head>
 	<meta charset="utf-8">
 	<title>LIB2024 - QA</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+.ans13 {
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background: blue;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		left: 50%;
+		margin-left: -100px;
+		}
+.container {
+	position: relative;
+	display: flex;
+	padding-bottom: 150px;
+}
+.spin {
+		animation-name: spin;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+}
+	to {
+		transform: rotate(360deg);
+}
+}
+.rotate-me {
+	animation-name: spin;
+	animation-delay: 0.5s;
+	animation-iteration-count: 5;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}
+</style>
 </head>
 <body>
 	<h1>LIB2024- QA</h1>
-	<!-- Qus/Ans list begins -->
 	<ol>
-		<!-- Qus 1 -->
 		<li>
 			<p>
 				<strong>Qus: </strong>
@@ -16,9 +54,9 @@
 			</p>
 			<p>
 				<strong>Ans: </strong>
-				Ans for Qus 1
-		</p></li>
-		<!-- Qus 2 -->
+				HTML, CSS, and Javascript.
+			</p>
+		</li>
 		<li>
 			<p>
 				<strong>Qus:</strong>
@@ -26,7 +64,224 @@
 			</p>
 			<p>
 				<strong>Ans:</strong>
-				Ans for Qus 2
+				Version control is a system that records all the changes made to a file(s) over time so that you can see all the different versions of the file(s) when needed. GitHub, for example, is a version control software.
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What tag is used to create the title of a web page? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				 &lt;title&gt; is the tag used to create a title of a web page. For example, &lt;title&gt;QA Assignment&lt;/title&gt;
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What tag is used to create a paragraph in html? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;p&gt; is the tag used to create a paragraph in html. For example, &lt;p&gt;This is a paragraph&lt;/p&gt;
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;p&gt; is the odd tag out because it is a block-level element and the tags &lt;span&gt;, &lt;a&gt;, and &lt;i&gt; are inline elements. 
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What are the tags required to create a navigation list in HTML? 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				To create a navigation list in HTML you need to use the tags 
+				&lt;nav&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/nav&gt;
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What element is used to create images? Name its attributes. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				The &lt;img&gt; tag is used to create images. 
+				The attributes for the &lt;img&gt; tag are: alt, crossorigin, height, ismap, loading, longdesc, referrerpolicy, sizes, src, srcset, usemap, width. 
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt;  and state the reason
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;b&gt; is the odd one out in these tags because the rest of these tags are used to make a table in HTML, but &lt;b&gt; is not a tag used to make a table. The &lt;b&gt; tag is used to make text bold. 
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Give an example of color picker input. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;label for="favcolor"&gt;Select your favorite color:&lt;/label&gt;
+				&lt;input type="color" id="favcolor" name="favcolor" value="#ff0000"&gt;
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				What is the use of name and value attributes? Give two examples 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				The name attribute is used to specify the name of an &lt;input&gt; element. The value attribute is the property that defines the input data. 
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Give an example of inline style.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&lt;h1 style="color:blue;text-align:center;"&gt;This is a heading&lt;/h1&gt;
+				&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you link an external style sheet? Give example. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				You can link an external style sheet in and HTML document by using the &lt;link&gt; tag inside of the &lt;head&gt;
+				&lt;head&gt;
+				&lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+				&lt;/head&gt;
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px. 
+			</p>
+			<div class="container">
+			<p>
+				<strong>Ans:</strong>
+				<div class="ans13">
+					<p>This is a paragraph</p>
+		</div>
+			</p>
+		</div>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Create CSS keyframes block called "spin" that rotates an element. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				<div class="spin">
+					<p>spin</p>
+				</div>
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Create CSS animation block to rotate an element that has the following properties :
+
+				class "rotate-me"
+				It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				<div class="rotate-me">
+					<p>rotate</p>
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you include create an alert with string "I love JavaScript" using JavaScript?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				<button onClick="myalert()">
+					Alert
+				</button>
+				<script>
+					function myalert() {
+						alert("I love JavaScript");
+					}
+				</script>
+				<p>
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				<div id="fade-me">
+					<p>fade</p>
+				</div>
+				<script>
+					$("#fade-me").click(function() {
+						$("#fade-me").fadeOut(300);
+					});
+				</script>
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				How would you select all elements with class "my-class" using Javascript and Jquery?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				For Jquery you would use $(“.my-class”). For Javascript you would use document.getElementByClassName(“my-class”);
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Give an example of input field that takes phone number with format "123-456-7890"?
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				<label for="phone">Format: "123-456-7890"</label>
+				<input type="tel" id="phone" name="phone" pattern=“[0-9]{3}-[0-9]{3}-[0-9]{4}”>
+			</p>
+		</li>
+		<li>
+			<p>
+				<strong>Qus:</strong>
+				Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				I liked HTML the best because it is simple, and I have less complications than I do using CSS, Javascript, and JQuery. However, I like CSS because it is very customizable and fun because it is the design aspect of a webpage. I don't like using CSS though because it is difficult and time consuming to get the results you are looking for.
 			</p>
 		</li>
   </ol>
