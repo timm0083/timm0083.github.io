@@ -44,7 +44,7 @@ table {
 header { 
 	background-color: #7cc576;
 	width: 100%;
-	 }
+}
 .clearfix::after {
 	content: "";
 	clear: both;
@@ -59,7 +59,6 @@ body {
     text-align:center;;
     box-sizing: border-box;
     display: inline-block;
-
 }
 .logo {
 	float: left;

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Final</title>
+	<script src="js/style.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+<link rel="stylesheet" type="text/css" href="css/font.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lilita+One&display=swap" rel="stylesheet">
+</head> 
+<body>
+	<header class="clearfix">
+		<div class="title">
+			<h1>MY LOGO</h1>
+		</div>
+		<div class="navigation">
+			<nav class="topnav" id="myTopnav">
+				<ul>
+					<li class="link"><a href="#home">Home</a></li>
+					<li class="link"><a href="#about">About</a></li>
+					<li class="link"><a href="#schedule">Schedule</a></li>
+					<li class="link"><a href="#portfolio">Portfolio</a></li>
+					<li class="link"><a href="#contact">Contact</a></li>
+				</ul>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars fa-2x"></i>
+				</a>
+			  </nav>
+			</div>
+			  <script>
+			  function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+				  x.className += " responsive";
+				} else {
+				  x.className = "topnav";
+				}
+			  }
+			  </script>
+		</header>
+		<main>
+		<article class="main-content clearfix">
+		<section class="about-section clearfix">
+		<div class="about-div">
+			<h2>ABOUT</h2>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed condimentum ante. Pellentesque quis leo at mi elementum interdum sed vel orci. Sed sodales tempor nisl a dignissim. Vestibulum bibendum odio eget sem aliquam, nec auctor turpis feugiat. Fusce mi tellus, scelerisque sit amet varius a, pulvinar eu sapien. Ut nec nunc eu eros malesuada interdum. Nunc tempus ipsum erat, id lacinia velit sagittis nec. Sed mollis interdum urna, nec porta est bibendum id. Donec id dolor vel turpis bibendum bibendum a eget orci. Nullam at auctor dui. Sed mi neque, efficitur in massa quis, sodales efficitur eros.
+			Donec rhoncus massa dui, non dictum sapien auctor blandit. Sed eleifend metus nec justo condimentum scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean hendrerit lacus ante, a lobortis libero luctus in. Praesent condimentum mattis leo nec fermentum. Nam non fringilla sapien. Integer pulvinar vestibulum mattis. Vivamus leo lorem, viverra vitae nulla in, ultrices eleifend nibh. Etiam mollis felis non nisl sollicitudin, vel sodales quam efficitur.</p>
+			<br>
+			<p>Morbi enim massa, pulvinar non arcu vitae, vulputate ultrices turpis. Maecenas non suscipit tellus. Duis sollicitudin vestibulum convallis. Praesent luctus facilisis turpis, non bibendum risus fringilla eu. Praesent vestibulum ultricies ultrices. Duis in lacinia eros, nec congue metus. Aenean finibus, libero eu luctus condimentum, enim nulla condimentum dolor, nec rutrum nisi ipsum a risus. Mauris feugiat ac lacus quis hendrerit. Praesent pharetra, nulla a condimentum commodo, orci metus ultrices ligula, quis efficitur neque velit at leo. Donec non mauris aliquam, porttitor orci at, euismod sem. Curabitur pretium nisi ut auctor sodales. Vivamus congue velit at erat pretium rhoncus. In iaculis varius libero dictum ornare. Sed vel felis sem. Sed ultricies, eros quis finibus commodo, leo nisi faucibus est, non finibus sem odio id sem. Nullam tellus enim, ultricies vitae porttitor nec, auctor sed neque.</p>
+		</div>
+			<aside class="about-image clearfix">
+				<img src="img/cathedral1.png" alt="about-section">
+			</aside>
+			</section>
+			<section class="schedule-section">
+				<h2>SCHEDULE</h2>
+				<br>
+				<table>
+					<tr>
+						<th>TIME</th>
+						<th>MONDAY</th>
+						<th>TUESDAY</th>
+						<th>WEDNESDAY</th>
+						<th>THURSDAY</th>
+						<th>FRIDAY</th>
+					</tr>
+					<tr>
+						<td>09:00 <br> - <br> 11:00</td>
+						<td>Communications I</td>
+						<td>Client Services</td>
+						<td>Special Collections</td>
+						<td>Directed Reseach Seminar</td>
+						<td>Client Services</td>
+					</tr>
+					<tr>
+						<td>11:00 <br> - <br> 12:30</td>
+						<td>Reference</td>
+						<td>Internet App</td>
+						<td>Library Software</td>
+						<td>French</td>
+						<td>Reference</td>
+					</tr>
+					<tr>
+						<td>14:00 <br> - <br> 15:00</td>
+						<td>Acquisitions</td>
+						<td>General Elective</td>
+						<td>Marketing</td>
+						<td>Emerging Library Tech</td>
+						<td>Library Software</td>
+					</tr>
+					<tr>
+						<td>15:30 <br> - <br> 17:30</td>
+						<td>French</td>
+						<td>French</td>
+						<td>Acquisitions</td>
+						<td>Subject Analysis</td>
+						<td>Internet App</td>
+					</tr>
+				</table>
+			</section>
+			<section class="profile-section">
+				<div class="edit-profile">
+				<h2>EDIT PROFILE</h2>
+				<br>
+				<form onclick="return results();" onsubmit="return false" method="GET">
+				<div class="form">
+					<div class=“col-25”><label for="name">Name:</label></div>
+					<div class=“col-75”><input type="text" id="name" name="name" placeholder="John Doe" required></div>
+				<br>
+					<div class=“col-25”><label for="email">Email:</label></div>
+					<div class=“col-75”><input type="text" id="email" name="email" placeholder="johndoe@algonquincollege.com" required></div>
+				<br>
+					<div class=“col-25”><label for="address">Address:</label></div>
+					<div class=“col-75”><input type="text" id="address" name="address" placeholder="1385 Woodroffe Ave" required></div>
+				<br>
+					<div class=“col-25”><label for="city">City:</label></div>
+					<div class=“col-75”><input type="text" id="city" name="city" placeholder="Nepean" required></div>
+				<br>
+					<div class=“col-25”><label for="province">Province:</label></div>
+					<div class=“col-75”><select name="province" id="province" required>
+					<option value="" disabled selected>Select Province</option>
+					<option value="AB">Alberta</option>
+					<option value="BC">British Columbia</option>
+					<option value="MB">Manitoba</option>
+					<option value="NB">New Brunswick</option>
+					<option value="NFL">Newfoundland & Labrador</option>
+					<option value="NS">Nova Scotia</option>
+					<option value="ON">Ontario</option>
+					<option value="PEI">Prince Edward Island</option>
+					<option value="QC">Quebec</option>
+					<option value="SK">Saskatchewan</option>
+					<option value="NT">Northwest Territories</option>
+					<option value="NT">Nunavut</option>
+					<option value="YT">Yukon</option>
+				</select>
+				</div>
+			</div>
+				<br>
+					<div class=“col-25”><label for="postal-code">Postal Code:</label></div>
+					<div class=“col-75”><input type="text" id="postalcode" name="postal-code" placeholder="K2G 1V8" required></div>
+					<br>
+					<input type="submit" class="submit">
+				</form>
+			</div>
+			<div class="profile-info clearfix">
+			<h2>PROFILE INFO</h2>
+			<br>
+			<div class="card">
+  			<p><i class="fas fa-user-circle fa-10x">
+  			</i></p>
+  			<div class="container clearfix">
+    			<h4 id="p1">John Doe</span></h4>
+    				<br>
+    				<p id="p2">JohnDoe@algonquincollege.com</p>
+    				<br>
+    				<p id="p3" class='inline'>1385 Woodroffe Ave,<p id="p4" class=“inline”>Nepean</p>
+    				<br>
+    				<p id="p6" class=“inline”>ON,</p><p id="p5" class=“inline”></span>K2G 1V8</p>
+    				<br>
+    				<p><i class="far fa-envelope fa-2x"></i></p>
+  			</div>
+			</div>
+			</div>
+			</section>
+		</article>
+	</main>
+	<footer class="clearfix">
+	<div class="footer-nav">
+		<h3>Quick Links</h3>
+		<nav>
+			<ul>
+				<li class="quicklinks"><a href="https://www.facebook.com" target="_blank">SCHEDULE</a></li>
+				<li class="quicklinks"><a href="https://www.facebook.com" target="_blank">ABOUT</i></a></li>
+				<li class="quicklinks"><a href="https://www.facebook.com" target="_blank">PORTFOLIO</i></a></li>
+				<li class="quicklinks"><a href="https://www.facebook.com" target="_blank">CONTACT</i></a></li>
+
+			</ul>
+		</nav>
+	</div>
+	<div class="social-media clearfix">
+		<h3>FOLLOW US</h3>
+		<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+		<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+		<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+	</div>
+	<div class="address clearfix">
+		<h3>ADDRESS</h3>
+			<p>1385 Woodroffe Ave,</p>
+			<br>
+			<p>Nepean, ON K2G 1V8</p>
+			<br>
+			<p>Canada</p>
+	</div>
+	</footer>
+</body>
+</html>
